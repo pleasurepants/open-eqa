@@ -1546,3 +1546,63 @@ Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
  31%|███▏      | 513/1636 [2:01:26<4:25:28, 14.18s/it]Processing question_id: 15d330b7-11bd-4b29-8263-5235cab34c21
 Question: Is the AC vent on the stairs open or closed?
 Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 31%|███▏      | 514/1636 [2:01:40<4:25:16, 14.19s/it]Processing question_id: eaa52c2e-0737-4a50-b439-4a6df3e30ebd
+Question: Where can I clean fruit while facing the dining room table?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 31%|███▏      | 515/1636 [2:01:54<4:25:04, 14.19s/it]Processing question_id: d2fff880-9f23-487e-acc9-2c112c5015dd
+Question: What can I use for practicing pullups?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 32%|███▏      | 516/1636 [2:02:08<4:24:49, 14.19s/it]Processing question_id: 09eeb05d-f4a5-4cfb-8ca6-60b64e9333d5
+Question: What can I do to decrease CO2 when cooking?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 32%|███▏      | 517/1636 [2:02:22<4:24:36, 14.19s/it]Processing question_id: ffad74a4-20fa-4980-850f-83a1d996ba0b
+Question: Where is the painting of a feather?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 32%|███▏      | 518/1636 [2:02:37<4:24:23, 14.19s/it]Processing question_id: 7c0c6e19-8e84-4dc2-9d62-6d91b0b16848
+Question: Where is the white poof?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 32%|███▏      | 519/1636 [2:02:51<4:24:15, 14.20s/it]Processing question_id: 3c466b52-b0c1-489f-8eec-342e330878ef
+Question: What is above the entry way shelf?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 32%|███▏      | 520/1636 [2:03:05<4:23:59, 14.19s/it]Processing question_id: 3321cf87-c5fe-46cc-90c2-33d114503de6
+Question: What is in the corner of the dining room?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 32%|███▏      | 521/1636 [2:03:19<4:23:46, 14.19s/it]Processing question_id: daad7b7b-c23c-463b-8786-6ba3492b748d
+Question: What material are the chairs at the downstairs table?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 32%|███▏      | 522/1636 [2:03:33<4:23:29, 14.19s/it]Processing question_id: b8ab9833-1dc7-460e-aae8-b6dba755ebb4
+Question: What color are the livingroom curtains?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 32%|███▏      | 523/1636 [2:03:48<4:23:13, 14.19s/it]Processing question_id: 4cae28e3-0192-4460-8f15-293b8e9fa9d3
+Question: Is there space for another beanbag chair against the far wall downstairs?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 32%|███▏      | 524/1636 [2:04:02<4:23:00, 14.19s/it]Processing question_id: 1fcfa31c-43d6-4c9a-acb6-21f019956e1c
+Question: Is there space for another pillow on the back of the bench with the coat hangers?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 32%|███▏      | 525/1636 [2:04:16<4:22:47, 14.19s/it]Processing question_id: fa7906e8-12fb-4511-9b6d-9b514a3e63f9
+Question: Is the downstairs closet door open or closed?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 32%|███▏      | 526/1636 [2:04:30<4:22:33, 14.19s/it]Processing question_id: 5172a2f0-1c42-4d88-9342-302199466039
+Question: Are both the dining room table and kitchen counter set?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 32%|███▏      | 527/1636 [2:04:44<4:22:17, 14.19s/it]Processing question_id: 8e66c38d-8eb3-4b68-babf-78eb561ea94f
+Question: Where can I put my scarf?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 32%|███▏      | 528/1636 [2:04:58<4:22:02, 14.19s/it]Processing question_id: b3ac4009-274c-446e-9fd3-788610d06b86
+Question: Where can I find the time?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 32%|███▏      | 529/1636 [2:05:13<4:21:44, 14.19s/it]Processing question_id: 7a6170d0-c07d-4f7a-b6b7-504009ef19eb
+Question: Where is the mortar and pestle?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 32%|███▏      | 530/1636 [2:05:27<4:21:29, 14.19s/it]Processing question_id: 4011b8b7-dc06-4e43-aeeb-6352e5e53dce
+Question: Where is Yahtzee?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 32%|███▏      | 531/1636 [2:05:41<4:21:13, 14.18s/it]Processing question_id: 1c4ca9b3-bbc4-4515-9254-cbff8c6c166d
+Question: What decorations is on the bathroom counter?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 33%|███▎      | 532/1636 [2:05:55<4:20:58, 14.18s/it]Processing question_id: 22c1b723-7457-4c6d-a63f-de228f63cdf4
+Question: What color is the tray on the coffee table?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 33%|███▎      | 533/1636 [2:06:09<4:20:43, 14.18s/it]Processing question_id: 740df01e-35fd-42ec-9a39-b04f53f2ff3c
+Question: Where is the "Be Thankful" poster?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
