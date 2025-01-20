@@ -1606,3 +1606,48 @@ Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
  33%|███▎      | 533/1636 [2:06:09<4:20:43, 14.18s/it]Processing question_id: 740df01e-35fd-42ec-9a39-b04f53f2ff3c
 Question: Where is the "Be Thankful" poster?
 Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 33%|███▎      | 534/1636 [2:06:24<4:20:28, 14.18s/it]Processing question_id: ba427cc2-18ee-4082-8182-6d96c3db6396
+Question: Where is "Bless this home" written?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 33%|███▎      | 535/1636 [2:06:38<4:20:13, 14.18s/it]Processing question_id: d5c19ea7-5931-4501-a3cf-bed0eb161a9f
+Question: Are the blinds closed?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 33%|███▎      | 536/1636 [2:06:52<4:19:58, 14.18s/it]Processing question_id: b30225ce-76a1-4af7-aad7-ae068767fd73
+Question: Is the dining room table set?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 33%|███▎      | 537/1636 [2:07:06<4:19:41, 14.18s/it]Processing question_id: a88522e3-8de8-46c5-9b58-b5c5ec7d20f4
+Question: Where should I sit to watch tv?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 33%|███▎      | 538/1636 [2:07:20<4:19:26, 14.18s/it]Processing question_id: 31623a54-4b72-4e83-a5fc-8048c3b345fe
+Question: Do frames near microwave show English letters?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 33%|███▎      | 539/1636 [2:07:34<4:19:14, 14.18s/it]Processing question_id: 65198890-05ca-4494-bef9-a449e120b969
+Question: Does poster above stairs show English letters?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 33%|███▎      | 540/1636 [2:07:49<4:19:03, 14.18s/it]Processing question_id: 9b0bb497-0f84-44b4-8f94-93c43aad14cd
+Question: Where is the black cross?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 33%|███▎      | 541/1636 [2:08:03<4:18:49, 14.18s/it]Processing question_id: 0bc41aa3-c14f-4117-92ff-868fda0e5e4b
+Question: Where is the plaid blanket?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 33%|███▎      | 542/1636 [2:08:17<4:18:38, 14.18s/it]Processing question_id: 99219276-38ce-4730-a793-75108c7bbb9a
+Question: How many rooms have vehicle wallpaper?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 33%|███▎      | 543/1636 [2:08:31<4:18:30, 14.19s/it]Processing question_id: 27fd907f-7c89-4e0a-9c6c-73ba570b0df6
+Question: Where is the three blade fan?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 33%|███▎      | 544/1636 [2:08:45<4:18:14, 14.19s/it]Processing question_id: cd8dd632-4431-44b9-9cbb-6eec2317344c
+Question: Where is the four blade fan?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 33%|███▎      | 545/1636 [2:09:00<4:17:59, 14.19s/it]Processing question_id: 2d2cc029-bad4-4dd3-9dc6-aeceb0207e2a
+Question: What is the blue object left of the downstairs bed?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 33%|███▎      | 546/1636 [2:09:14<4:17:46, 14.19s/it]Processing question_id: f9ded8fa-a66c-4a5d-a4fc-5128a25e0257
+Question: What is the black and red object in the upstairs bedroom?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 33%|███▎      | 547/1636 [2:09:28<4:17:35, 14.19s/it]Processing question_id: 8de58b75-8369-4185-b39f-82838fc29d87
+Question: what color are the dining room walls?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 33%|███▎      | 548/1636 [2:09:42<4:17:20, 14.19s/it]Processing question_id: b41c3183-c6cb-4bc6-a554-13e27532b2ad
+Question: What color is the front door?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
