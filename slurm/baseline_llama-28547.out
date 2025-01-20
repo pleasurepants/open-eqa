@@ -1651,3 +1651,18 @@ Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
  33%|███▎      | 548/1636 [2:09:42<4:17:20, 14.19s/it]Processing question_id: b41c3183-c6cb-4bc6-a554-13e27532b2ad
 Question: What color is the front door?
 Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 34%|███▎      | 549/1636 [2:09:56<4:17:03, 14.19s/it]Processing question_id: 8b193fd8-ac3f-40bf-add7-3b7dabacc87c
+Question: What is on the opposite wall of the bed?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 34%|███▎      | 550/1636 [2:10:11<4:16:53, 14.19s/it]Processing question_id: 5148a354-85bd-439b-bda8-6e15991553db
+Question: What's below the window of the front door?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 34%|███▎      | 551/1636 [2:10:25<4:16:38, 14.19s/it]Processing question_id: 33bf0fc3-9b00-4c37-803f-c1c3c7bf860b
+Question: Is there clutter on the kitchen island?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 34%|███▎      | 552/1636 [2:10:39<4:16:23, 14.19s/it]Processing question_id: f739f880-79fc-4066-9ca1-b04943433974
+Question: Where can I workout?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
+ 34%|███▍      | 553/1636 [2:10:53<4:16:13, 14.20s/it]Processing question_id: b6b87757-49b8-4719-be2c-266038b5df34
+Question: What type of heating does this house have?
+Output path: data/results/open-eqa-v0-llama-2-7b-hf-1234.json
