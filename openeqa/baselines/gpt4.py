@@ -20,6 +20,7 @@ from openeqa.utils.openai_utils import (
 from openeqa.utils.prompt_utils import load_prompt
 
 
+os.environ["OPENAI_API_KEY"]="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"
 
 
 def parse_args() -> argparse.Namespace:
