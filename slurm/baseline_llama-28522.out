@@ -1,0 +1,116 @@
+Sun Jan 19 01:21:47 PM CET 2025
+worker-7
+/home/wiss/zhang/anaconda3/envs/openeqa/bin/python
+Running on MASTER_NODE=worker-7, MASTER_PORT=8940, RDZV_ID=27529
+found 1,636 questions
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:18<04:18, 18.48s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:37<04:06, 18.97s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:54<03:32, 17.72s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [01:10<03:07, 17.04s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [01:26<02:48, 16.87s/it]Loading checkpoint shards:  40%|████      | 6/15 [01:42<02:28, 16.51s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [01:58<02:10, 16.29s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [02:14<01:53, 16.15s/it]Loading checkpoint shards:  60%|██████    | 9/15 [02:30<01:37, 16.32s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [02:46<01:20, 16.20s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [03:03<01:05, 16.41s/it]Loading checkpoint shards:  80%|████████  | 12/15 [03:19<00:48, 16.29s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [03:37<00:33, 16.83s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [03:54<00:16, 16.81s/it]Loading checkpoint shards: 100%|██████████| 15/15 [03:56<00:00, 12.24s/it]Loading checkpoint shards: 100%|██████████| 15/15 [03:56<00:00, 15.74s/it]
+WARNING:root:Some parameters are on the meta device device because they were offloaded to the cpu.
+  0%|          | 0/1636 [00:00<?, ?it/s]Processing question_id: f2e82760-5c3c-41b1-88b6-85921b9e7b32
+Question: What is the white object on the wall above the TV?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  0%|          | 1/1636 [1:18:38<2142:55:23, 4718.36s/it]Processing question_id: 7447d782-d1a7-4c87-86dc-b5eafc5a0f76
+Question: What material is the ceiling in the living room?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  0%|          | 2/1636 [2:30:10<2027:45:03, 4467.51s/it]Processing question_id: e2ccf6f4-22a9-47d1-ab8d-a05a13435b82
+Question: What color is the staircase railing?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  0%|          | 3/1636 [3:37:54<1943:02:35, 4283.50s/it]Processing question_id: c841bb52-1cec-46d7-bb83-8c99b5c66fa8
+Question: What is in between the two picture frames on the blue wall in the living room?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  0%|          | 4/1636 [4:39:50<1840:17:36, 4059.47s/it]Processing question_id: 79344680-6b45-4531-8789-ad0f5ef85b3b
+Question: Is there room on the dining table to eat?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  0%|          | 5/1636 [5:40:33<1771:01:47, 3909.08s/it]Processing question_id: 500e6924-0ea3-45c8-89ce-db3d37e142bf
+Question: Is the dining table set with table mats?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  0%|          | 6/1636 [6:39:33<1713:06:42, 3783.56s/it]Processing question_id: ecad68d2-a16f-4a3e-b8a1-a70ec1c5cf00
+Question: Is the front door open?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  0%|          | 7/1636 [7:38:42<1677:23:04, 3706.93s/it]Processing question_id: 5c1d30b9-5827-49fc-b74f-5ee9909a75b8
+Question: What should I do to cool down?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  0%|          | 8/1636 [8:37:51<1653:40:14, 3656.77s/it]Processing question_id: 8d7f1dd7-9764-4603-918b-58eefcb0b10e
+Question: What can I do to increase the speed of the ceiling fan?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  1%|          | 9/1636 [9:36:47<1635:34:25, 3618.97s/it]Processing question_id: c8808989-9b62-4764-814e-520fd40c22cd
+Question: What type of ceiling is in the living room?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  1%|          | 10/1636 [10:35:53<1624:26:14, 3596.54s/it]Processing question_id: 0c6b5dce-8baf-4d95-b7ca-26fe915c4bd7
+Question: What is the large, round, and black object on the wall?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  1%|          | 11/1636 [11:34:15<1610:19:06, 3567.47s/it]Processing question_id: e816a1f9-af6c-4901-8d54-4ddaa2a60dc3
+Question: What shape are the door knobs?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  1%|          | 12/1636 [12:32:08<1596:18:49, 3538.63s/it]Processing question_id: 19baf626-2db5-4fb0-a7ad-02896fa77b18
+Question: What type of flooring does this house feature?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  1%|          | 13/1636 [13:36:10<1636:48:12, 3630.62s/it]Processing question_id: b6dcf043-30a6-4b4e-9787-9b29bd1b1703
+Question: What is to the left of the mirror?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  1%|          | 14/1636 [14:46:23<1715:01:02, 3806.45s/it]Processing question_id: 5460114d-e885-4eae-8bdc-a273deb3df0a
+Question: What is to the left of the staircase?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  1%|          | 15/1636 [15:55:11<1757:40:54, 3903.55s/it]Processing question_id: d16b6600-beb5-4bf4-8045-d018b75eefb1
+Question: Are the cabinets below the mirror closed?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  1%|          | 16/1636 [17:05:12<1796:52:46, 3993.07s/it]Processing question_id: 21f8ed6a-4ca4-465f-986d-c4390984d8a9
+Question: Is the bedroom door open?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  1%|          | 17/1636 [18:13:41<1811:25:45, 4027.89s/it]Processing question_id: 501c3264-ca08-487d-a038-0e83968359f6
+Question: Where is the mirror?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  1%|          | 18/1636 [19:24:06<1836:55:12, 4087.09s/it]Processing question_id: 564d876c-44f1-4915-8d4b-ab5a7728494f
+Question: What is the green object in the left of the garage?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  1%|          | 19/1636 [20:34:00<1850:13:50, 4119.25s/it]Processing question_id: 77c6644e-6018-4ef3-a683-276d3d2af67f
+Question: What is the bin with the yellow lid?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  1%|          | 20/1636 [21:44:30<1864:01:35, 4152.53s/it]Processing question_id: a86ef102-5500-4fbf-8fae-cdbeb20a3b7b
+Question: What color is the car?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  1%|▏         | 21/1636 [22:52:37<1854:03:29, 4132.89s/it]Processing question_id: 438e8c6f-f27d-4d3d-b13d-6f41c2981c2a
+Question: What material is the floor?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  1%|▏         | 22/1636 [24:13:12<1947:16:46, 4343.37s/it]Processing question_id: 9b4a7fbb-680d-4e39-8d60-7b1e521f3108
+Question: What is on the top shelf to the right side of the garage?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  1%|▏         | 23/1636 [25:33:12<2007:34:49, 4480.65s/it]Processing question_id: 35bfcf60-4227-4bbb-9213-e1bf643b2325
+Question: Is the garbage bin open?
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+  1%|▏         | 24/1636 [26:41:00<1950:52:10, 4356.78s/it]Processing question_id: 3a803472-47cd-4903-8380-d0b00efbbf08
+Question: Is the house doorway open or closed?q
+Output path: data/results/open-eqa-v0-llama-2-70b-hf-1234.json
+[2025-01-20 16:52:21,260] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: -9) local_rank: 0 (pid: 1420906) of binary: /home/wiss/zhang/anaconda3/envs/openeqa/bin/python
+Traceback (most recent call last):
+  File "/home/wiss/zhang/anaconda3/envs/openeqa/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/wiss/zhang/anaconda3/envs/openeqa/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/wiss/zhang/anaconda3/envs/openeqa/lib/python3.9/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/home/wiss/zhang/anaconda3/envs/openeqa/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/home/wiss/zhang/anaconda3/envs/openeqa/lib/python3.9/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/home/wiss/zhang/anaconda3/envs/openeqa/lib/python3.9/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/home/wiss/zhang/anaconda3/envs/openeqa/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/wiss/zhang/anaconda3/envs/openeqa/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/home/wiss/zhang/code/open-eqa/openeqa/baselines/llama.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-01-20_16:52:21
+  host      : worker-7
+  rank      : 0 (local_rank: 0)
+  exitcode  : -9 (pid: 1420906)
+  error_file: <N/A>
+  traceback : Signal 9 (SIGKILL) received by PID 1420906
+============================================================

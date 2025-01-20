@@ -26,7 +26,7 @@ def parse_args() -> argparse.Namespace:
         "-m",
         "--model-path",
         type=Path,
-        required=True,
+        default="/nfs/data2/zhang/projects/openeqa/llama/Llama-2-7b-hf",
         help="path to weights in huggingface format",
     )
     parser.add_argument(
@@ -104,7 +104,8 @@ def ask_question(
 ) -> Optional[str]:
     prompt = load_prompt("blind-llm")
     input = prompt.format(question=question)
-    output = model(input, max_new_tokens=max_tokens, temperature=temperature)
+    # set "do_sample=False" to avoid probability tensor contains either `inf`, `nan` or element < 0
+    output = model(input, max_new_tokens=max_tokens, temperature=temperature, do_sample=False)
     return parse_output(output)
 
 
@@ -136,6 +137,11 @@ def main(args: argparse.Namespace):
         question_id = item["question_id"]
         if question_id in completed:
             continue  # skip existing
+        
+        print(f"Processing question_id: {question_id}")
+        print(f"Question: {item['question']}")
+        print(f"Output path: {args.output_path}")
+
 
         # generate answer
         question = item["question"]

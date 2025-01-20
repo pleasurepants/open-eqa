@@ -20,6 +20,7 @@ from openeqa.utils.openai_utils import (
 )
 from openeqa.utils.prompt_utils import load_prompt
 
+os.environ["OPENAI_API_KEY"]="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"
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
@@ -32,14 +33,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--model",
         type=str,
-        default="gpt-4-vision-preview",
-        help="OpenAI model (default: gpt-4-vision-preview)",
+        default="gpt-4o",
+        help="OpenAI model (default: gpt-4o)",
     )
     parser.add_argument(
         "--frames-directory",
         type=Path,
-        default="data/frames/",
-        help="path image frames (default: data/frames/)",
+        default="/nfs/data2/zhang/openeqa/hm3d/data/frames/",
+        help="path image frames",
     )
     parser.add_argument(
         "--num-frames",
@@ -100,7 +101,7 @@ def ask_question(
     image_paths: List,
     image_size: int = 512,
     openai_key: Optional[str] = None,
-    openai_model: str = "gpt-4-vision-preview",
+    openai_model: str = "gpt-4o",
     openai_seed: int = 1234,
     openai_max_tokens: int = 128,
     openai_temperature: float = 0.2,
