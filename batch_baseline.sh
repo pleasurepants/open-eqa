@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=llama
 #SBATCH --nodes=1
-#SBATCH --gres=gpu:4
+#SBATCH --gres=gpu:1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 #SBATCH --time=10-00:00:00
@@ -40,7 +40,7 @@ echo "Running on MASTER_NODE=$MASTER_NODE, MASTER_PORT=$MASTER_PORT, RDZV_ID=$RD
 python -m torch.distributed.run --nproc_per_node=1 --rdzv-id=$RDZV_ID --rdzv-backend=c10d --rdzv-endpoint=$MASTER_NODE:$MASTER_PORT \
     /home/wiss/zhang/code/open-eqa/openeqa/baselines/llama.py \
     --seed 4321 \
-    --model-path /nfs/data2/zhang/projects/openeqa/llama/Llama-2-70b-hf \
+    --model-path /nfs/data2/zhang/projects/openeqa/llama/Llama-2-7b-hf \
 
 # 停止监控
 kill $GPU_MONITOR_PID $CPU_MONITOR_PID

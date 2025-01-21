@@ -9,9 +9,11 @@ from pathlib import Path
 from typing import Optional
 
 import tqdm
-
+import os
 from openeqa.utils.llama_utils import LLaMARunner, enable_full_determinism
 from openeqa.utils.prompt_utils import load_prompt
+
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 
 
 def parse_args() -> argparse.Namespace:
