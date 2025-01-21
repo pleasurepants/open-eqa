@@ -1,12 +1,0 @@
-Mon Jan 20 09:19:00 PM CET 2025
-worker-6
-/home/wiss/zhang/anaconda3/envs/openeqa/bin/python
-Running on MASTER_NODE=worker-6, MASTER_PORT=8317, RDZV_ID=19597
-found 1,636 questions
-Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:10<02:24, 10.32s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:20<02:13, 10.27s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:30<02:04, 10.34s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:41<01:54, 10.39s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:51<01:43, 10.38s/it]Loading checkpoint shards:  40%|████      | 6/15 [01:02<01:33, 10.38s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [01:12<01:23, 10.38s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [01:22<01:12, 10.34s/it]Loading checkpoint shards:  60%|██████    | 9/15 [01:33<01:02, 10.34s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [01:41<00:49,  9.82s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [01:47<00:34,  8.70s/it]Loading checkpoint shards:  80%|████████  | 12/15 [01:53<00:23,  7.70s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [02:00<00:14,  7.40s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [02:16<00:10, 10.17s/it]Loading checkpoint shards: 100%|██████████| 15/15 [02:17<00:00,  7.29s/it]Loading checkpoint shards: 100%|██████████| 15/15 [02:17<00:00,  9.15s/it]
-WARNING:root:Some parameters are on the meta device device because they were offloaded to the cpu.
-  0%|          | 0/1636 [00:00<?, ?it/s]Processing question_id: f2e82760-5c3c-41b1-88b6-85921b9e7b32
-Question: What is the white object on the wall above the TV?
-Output path: data/results/open-eqa-v0-llama-2-70b-hf-4321.json
-/home/wiss/zhang/anaconda3/envs/openeqa/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:492: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.2` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
-  warnings.warn(
