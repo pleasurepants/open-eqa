@@ -1,0 +1,126 @@
+### Starting TaskPrologue of job 2317785 on a0702 at Tue Jan 21 03:32:40 CET 2025
+Running on cores 0-15,64-95,112-127 with governor ondemand
+Tue Jan 21 03:32:40 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 565.57.01              Driver Version: 565.57.01      CUDA Version: 12.7     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:0E:00.0 Off |                    0 |
+| N/A   40C    P0             57W /  400W |       1MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA A100-SXM4-40GB          On  |   00000000:96:00.0 Off |                    0 |
+| N/A   33C    P0             53W /  400W |       1MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA A100-SXM4-40GB          On  |   00000000:CC:00.0 Off |                    0 |
+| N/A   34C    P0             54W /  400W |       1MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA A100-SXM4-40GB          On  |   00000000:D1:00.0 Off |                    0 |
+| N/A   34C    P0             54W /  400W |       1MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Tue Jan 21 03:32:43 CET 2025
+a0702.nhr.fau.de
+/home/hpc/v100dd/v100dd12/anaconda3/envs/iclblip/bin/python
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Traceback (most recent call last):
+  File "/home/hpc/v100dd/v100dd12/code/open-eqa/openeqa/baselines/llama.py", line 13, in <module>
+    from openeqa.utils.llama_utils import LLaMARunner, enable_full_determinism
+ModuleNotFoundError: No module named 'openeqa'
+Traceback (most recent call last):
+  File "/home/hpc/v100dd/v100dd12/code/open-eqa/openeqa/baselines/llama.py", line 13, in <module>
+Traceback (most recent call last):
+  File "/home/hpc/v100dd/v100dd12/code/open-eqa/openeqa/baselines/llama.py", line 13, in <module>
+    from openeqa.utils.llama_utils import LLaMARunner, enable_full_determinism
+ModuleNotFoundError: No module named 'openeqa'
+    from openeqa.utils.llama_utils import LLaMARunner, enable_full_determinism
+ModuleNotFoundError: No module named 'openeqa'
+W0121 03:32:54.064000 23445264892416 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 3787684 closing signal SIGTERM
+E0121 03:32:54.067000 23445264892416 torch/distributed/elastic/multiprocessing/api.py:833] failed (exitcode: 1) local_rank: 0 (pid: 3787681) of binary: /home/hpc/v100dd/v100dd12/anaconda3/envs/iclblip/bin/python
+Traceback (most recent call last):
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/iclblip/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/iclblip/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/iclblip/lib/python3.10/site-packages/torch/distributed/run.py", line 905, in <module>
+    main()
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/iclblip/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+    return f(*args, **kwargs)
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/iclblip/lib/python3.10/site-packages/torch/distributed/run.py", line 901, in main
+    run(args)
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/iclblip/lib/python3.10/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/iclblip/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 133, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/iclblip/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/home/hpc/v100dd/v100dd12/code/open-eqa/openeqa/baselines/llama.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2025-01-21_03:32:54
+  host      : a0702.nhr.fau.de
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 3787682)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2025-01-21_03:32:54
+  host      : a0702.nhr.fau.de
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3787683)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-01-21_03:32:54
+  host      : a0702.nhr.fau.de
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3787681)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+=== JOB_STATISTICS ===
+=== current date     : Tue Jan 21 03:32:55 CET 2025
+= Job-ID             : 2317785 on alex
+= Job-Name           : Llama-2-70b-hf
+= Job-Command        : /home/hpc/v100dd/v100dd12/code/open-eqa/batch_baseline_a100.sh
+= Initial workdir    : /home/hpc/v100dd/v100dd12/code/open-eqa
+= Queue/Partition    : a100
+= Slurm account      : v100dd with QOS=normal
+= Features           : a100_40
+= Requested resources:  for 1-00:00:00
+= Elapsed runtime    : 00:00:16
+= Total RAM usage    : 0.0 GiB of assigned  GiB (%)
+= Node list          : a0702
+= Subm/Elig/Start/End: 2025-01-20T22:56:50 / 2025-01-20T22:56:50 / 2025-01-21T03:32:38 / 2025-01-21T03:32:54
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           99.7G   104.9G   209.7G        N/A     487K     500K   1,000K        N/A    
+    /home/vault          0.0K  1048.6G  2097.2G        N/A       1      200K     400K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

@@ -7,7 +7,7 @@ import argparse
 import json
 from pathlib import Path
 from typing import Optional
-
+import os
 import tqdm
 import os
 from openeqa.utils.llama_utils import LLaMARunner, enable_full_determinism
