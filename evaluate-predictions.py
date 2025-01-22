@@ -11,7 +11,8 @@ import numpy as np
 from tqdm import tqdm
 
 from openeqa.evaluation.llm_match import get_llm_match_score
-
+import os
+os.environ["OPENAI_API_KEY"] = "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"
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()

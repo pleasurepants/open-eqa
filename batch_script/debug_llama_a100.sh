@@ -28,7 +28,7 @@ MASTER_PORT=$(comm -23 <(seq 8000 9000 | sort) <(ss -Htan | awk '{print $4}' | c
 
 RDZV_ID=$RANDOM
 MASTER_NODE=$(hostname)
-python -m debugpy --listen 0.0.0.0:8788 --wait-for-client \
+python -m debugpy --listen 0.0.0.0:8798 --wait-for-client \
  -m torch.distributed.run --nproc_per_node=4 --rdzv-id=$RDZV_ID --rdzv-backend=c10d --rdzv-endpoint=$MASTER_NODE --master_addr $MASTER_ADDR --master_port $MASTER_PORT \
     /home/hpc/v100dd/v100dd12/code/open-eqa/openeqa/baselines/llama.py \
     --seed 4321 \

@@ -10,12 +10,22 @@ from typing import Optional
 import os
 import tqdm
 import os
-from openeqa.utils.llama_utils import LLaMARunner, enable_full_determinism
+from openeqa.utils.llama_distributed_utils import LLaMARunner, enable_full_determinism
 from openeqa.utils.prompt_utils import load_prompt
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from accelerate import init_empty_weights, infer_auto_device_map
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+import torch.distributed as dist
+import torch
 
+
+def setup_distributed():
+    dist.init_process_group(backend="nccl")
+    deepspeed.init_distributed()  # 初始化 DeepSpeed
+    local_rank = int(os.environ["LOCAL_RANK"])
+    torch.cuda.set_device(local_rank)
+    print(f"Process {dist.get_rank()} using GPU {local_rank}")
+    return local_rank
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
@@ -108,22 +118,31 @@ def ask_question(
     prompt = load_prompt("blind-llm")
     input = prompt.format(question=question)
     # set "do_sample=False" to avoid probability tensor contains either `inf`, `nan` or element < 0
-    output = model(input, max_new_tokens=max_tokens, temperature=temperature, do_sample=False)
+    # output = model(input, max_new_tokens=max_tokens, temperature=temperature, do_sample=False)
+
+    output = model(input, max_new_tokens=max_tokens, temperature=temperature)
     return parse_output(output)
 
 
 def main(args: argparse.Namespace):
-    
-    # load dataset
-    dataset = json.load(args.dataset.open("r"))
-    print("found {:,} questions".format(len(dataset)))
+    setup_distributed()
 
-    # load model
+    # 加载 DeepSpeed 配置
+    deepspeed_config_path = "deepspeed_config.json"
+    with open(deepspeed_config_path, "r") as f:
+        deepspeed_config = json.load(f)
+
+    # 加载模型
     model = LLaMARunner(
         args.model_path,
         load_in_8bit=args.load_in_8bit,
         use_fast_kernels=args.use_fast_kernels,
+        deepspeed_config=deepspeed_config,  # DeepSpeed 配置
     )
+
+    # 加载数据集
+    dataset = json.load(args.dataset.open("r"))
+    print(f"found {len(dataset):,} questions")
 
     # load results
     results = []

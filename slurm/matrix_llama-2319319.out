@@ -1,0 +1,151 @@
+### Starting TaskPrologue of job 2319319 on a1621 at Tue Jan 21 16:03:02 CET 2025
+Running on cores 32-47 with governor ondemand
+Tue Jan 21 16:03:02 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 565.57.01              Driver Version: 565.57.01      CUDA Version: 12.7     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A40                     On  |   00000000:41:00.0 Off |                  Off |
+|  0%   35C    P8             21W /  300W |       1MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Tue Jan 21 16:03:06 CET 2025
+a1621.nhr.fau.de
+/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/bin/python
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+found 1,636 questions
+found 1,636 questions
+found 1,636 questions
+found 1,636 results
+found 1,636 results
+found 1,636 results
+  0%|          | 0/1636 [00:00<?, ?it/s]  0%|          | 0/1636 [00:00<?, ?it/s]  0%|          | 0/1636 [00:00<?, ?it/s]found 1,636 questions
+found 1,636 results
+  0%|          | 0/1636 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/tenacity/__init__.py", line 382, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/hpc/v100dd/v100dd12/code/open-eqa/openeqa/utils/openai_utils.py", line 69, in call_openai_api
+    client = openai.OpenAI()
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/openai/_client.py", line 107, in __init__
+    super().__init__(
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/openai/_base_client.py", line 760, in __init__
+    self._client = http_client or httpx.Client(
+TypeError: __init__() got an unexpected keyword argument 'proxies'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hpc/v100dd/v100dd12/code/open-eqa/openeqa/evaluation/llm_match.py", line 57, in get_llm_match_score
+    output = call_openai_api(
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+    return self(f, *args, **kw)
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/tenacity/__init__.py", line 379, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/tenacity/__init__.py", line 326, in iter
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x14df195ca970 state=finished raised TypeError>]
+  0%|          | 0/1636 [00:06<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/tenacity/__init__.py", line 382, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/hpc/v100dd/v100dd12/code/open-eqa/openeqa/utils/openai_utils.py", line 69, in call_openai_api
+    client = openai.OpenAI()
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/openai/_client.py", line 107, in __init__
+    super().__init__(
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/openai/_base_client.py", line 760, in __init__
+    self._client = http_client or httpx.Client(
+TypeError: __init__() got an unexpected keyword argument 'proxies'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hpc/v100dd/v100dd12/code/open-eqa/evaluate-predictions.py", line 123, in <module>
+    main(parse_args())
+  File "/home/hpc/v100dd/v100dd12/code/open-eqa/evaluate-predictions.py", line 106, in main
+    score = get_llm_match_score(
+  File "/home/hpc/v100dd/v100dd12/code/open-eqa/openeqa/evaluation/llm_match.py", line 68, in get_llm_match_score
+    raise e
+  File "/home/hpc/v100dd/v100dd12/code/open-eqa/openeqa/evaluation/llm_match.py", line 57, in get_llm_match_score
+    output = call_openai_api(
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+    return self(f, *args, **kw)
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/tenacity/__init__.py", line 379, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/tenacity/__init__.py", line 326, in iter
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x14df195ca970 state=finished raised TypeError>]
+[2025-01-21 16:03:39,097] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 1436727 closing signal SIGTERM
+[2025-01-21 16:03:39,098] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 1436729 closing signal SIGTERM
+[2025-01-21 16:03:39,098] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 1436730 closing signal SIGTERM
+[2025-01-21 16:03:39,109] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 1 (pid: 1436728) of binary: /home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/bin/python
+Traceback (most recent call last):
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/home/hpc/v100dd/v100dd12/code/open-eqa/evaluate-predictions.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-01-21_16:03:39
+  host      : a1621.nhr.fau.de
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 1436728)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+=== JOB_STATISTICS ===
+=== current date     : Tue Jan 21 16:03:39 CET 2025
+= Job-ID             : 2319319 on alex
+= Job-Name           : Llama-2-70b-hf
+= Job-Command        : /home/hpc/v100dd/v100dd12/code/open-eqa/batch_script/batch_eval.sh
+= Initial workdir    : /home/hpc/v100dd/v100dd12/code/open-eqa
+= Queue/Partition    : a40
+= Slurm account      : v100dd with QOS=normal
+= Requested resources:  for 1-00:00:00
+= Elapsed runtime    : 00:00:37
+= Total RAM usage    : 0.4 GiB of assigned  GiB (%)
+= Node list          : a1621
+= Subm/Elig/Start/End: 2025-01-21T16:02:41 / 2025-01-21T16:02:41 / 2025-01-21T16:03:02 / 2025-01-21T16:03:39
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           99.9G   104.9G   209.7G        N/A     487K     500K   1,000K        N/A    
+    /home/vault          0.0K  1048.6G  2097.2G        N/A       1      200K     400K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

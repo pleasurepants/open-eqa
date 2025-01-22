@@ -13,11 +13,11 @@ from typing import List, Union
 import torch
 import transformers
 from transformers import AutoModelForCausalLM, AutoTokenizer
-
+import os
 
 def enable_full_determinism(seed: int):
     transformers.enable_full_determinism(seed)
-
+import deepspeed
 
 class LLaMARunner:
     def __init__(
@@ -25,20 +25,38 @@ class LLaMARunner:
         model: Union[str, Path],
         load_in_8bit: bool = False,
         use_fast_kernels: bool = False,
+        deepspeed_config: Optional[dict] = None,
     ):
-        
+        local_rank = int(os.environ.get("LOCAL_RANK", 0))  # 获取本地 GPU 进程 ID
+        torch.cuda.set_device(local_rank)  # 设置当前进程使用的 GPU
+        self.device = f"cuda:{local_rank}"
+
+        # 加载模型
         self.model = AutoModelForCausalLM.from_pretrained(
             model,
             return_dict=True,
+            device_map="auto",  # 自动分配到设备
+            torch_dtype=torch.float16,  # 使用混合精度
             load_in_8bit=load_in_8bit,
-            device_map="auto",
-            attn_implementation="sdpa" if use_fast_kernels else None,
         )
+
+        # 启用 DeepSpeed
+        if deepspeed_config:
+            self.model = deepspeed.initialize(
+                model=self.model,
+                config=deepspeed_config,
+                optimizer=None,
+                lr_scheduler=None,
+                model_parameters=self.model.parameters(),
+            )[0]
+
         self.model.eval()
 
+        # 初始化 tokenizer
         self.tokenizer = AutoTokenizer.from_pretrained(model)
         self.tokenizer.pad_token = self.tokenizer.eos_token
         self.tokenizer.padding_side = "left"
+
 
     def __call__(
         self,
