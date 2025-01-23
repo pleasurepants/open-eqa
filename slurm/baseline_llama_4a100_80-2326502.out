@@ -1,0 +1,45 @@
+### Starting TaskPrologue of job 2326502 on a0832 at Thu Jan 23 17:13:20 CET 2025
+Running on cores 16-31,48-63,96-127 with governor ondemand
+Thu Jan 23 17:13:20 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 565.57.01              Driver Version: 565.57.01      CUDA Version: 12.7     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:13:00.0 Off |                    0 |
+| N/A   33C    P0             61W /  400W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA A100-SXM4-80GB          On  |   00000000:4F:00.0 Off |                    0 |
+| N/A   43C    P0             69W /  400W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA A100-SXM4-80GB          On  |   00000000:CD:00.0 Off |                    0 |
+| N/A   33C    P0             58W /  400W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA A100-SXM4-80GB          On  |   00000000:D2:00.0 Off |                    0 |
+| N/A   35C    P0             65W /  400W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Thu Jan 23 17:13:22 CET 2025
+a0832.nhr.fau.de
+/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/bin/python
+CUDA_VISIBLE_DEVICES = 0,1,2,3
+The `load_in_4bit` and `load_in_8bit` arguments are deprecated and will be removed in the future versions. Please, pass a `BitsAndBytesConfig` object in `quantization_config` argument instead.
+found 1,636 questions
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:04<01:08,  4.93s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:09<01:02,  4.78s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:14<01:00,  5.06s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:19<00:53,  4.90s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:24<00:47,  4.78s/it]Loading checkpoint shards:  40%|████      | 6/15 [00:28<00:42,  4.73s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [00:33<00:37,  4.72s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [00:38<00:32,  4.64s/it]Loading checkpoint shards:  60%|██████    | 9/15 [00:43<00:28,  4.76s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [00:47<00:23,  4.71s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [00:52<00:18,  4.67s/it]Loading checkpoint shards:  80%|████████  | 12/15 [00:56<00:13,  4.62s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [01:01<00:09,  4.57s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [01:05<00:04,  4.50s/it]Loading checkpoint shards: 100%|██████████| 15/15 [01:05<00:00,  3.25s/it]Loading checkpoint shards: 100%|██████████| 15/15 [01:05<00:00,  4.39s/it]
+model distributed:  {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 0, 'model.layers.8': 0, 'model.layers.9': 0, 'model.layers.10': 0, 'model.layers.11': 0, 'model.layers.12': 0, 'model.layers.13': 0, 'model.layers.14': 0, 'model.layers.15': 0, 'model.layers.16': 0, 'model.layers.17': 0, 'model.layers.18': 1, 'model.layers.19': 1, 'model.layers.20': 1, 'model.layers.21': 1, 'model.layers.22': 1, 'model.layers.23': 1, 'model.layers.24': 1, 'model.layers.25': 1, 'model.layers.26': 1, 'model.layers.27': 1, 'model.layers.28': 1, 'model.layers.29': 1, 'model.layers.30': 1, 'model.layers.31': 1, 'model.layers.32': 1, 'model.layers.33': 1, 'model.layers.34': 1, 'model.layers.35': 1, 'model.layers.36': 1, 'model.layers.37': 2, 'model.layers.38': 2, 'model.layers.39': 2, 'model.layers.40': 2, 'model.layers.41': 2, 'model.layers.42': 2, 'model.layers.43': 2, 'model.layers.44': 2, 'model.layers.45': 2, 'model.layers.46': 2, 'model.layers.47': 2, 'model.layers.48': 2, 'model.layers.49': 2, 'model.layers.50': 2, 'model.layers.51': 2, 'model.layers.52': 2, 'model.layers.53': 2, 'model.layers.54': 2, 'model.layers.55': 2, 'model.layers.56': 3, 'model.layers.57': 3, 'model.layers.58': 3, 'model.layers.59': 3, 'model.layers.60': 3, 'model.layers.61': 3, 'model.layers.62': 3, 'model.layers.63': 3, 'model.layers.64': 3, 'model.layers.65': 3, 'model.layers.66': 3, 'model.layers.67': 3, 'model.layers.68': 3, 'model.layers.69': 3, 'model.layers.70': 3, 'model.layers.71': 3, 'model.layers.72': 3, 'model.layers.73': 3, 'model.layers.74': 3, 'model.layers.75': 3, 'model.layers.76': 3, 'model.layers.77': 3, 'model.layers.78': 3, 'model.layers.79': 3, 'model.norm': 3, 'lm_head': 3}
+  0%|          | 0/1636 [00:00<?, ?it/s]  0%|          | 1/1636 [02:01<55:14:42, 121.64s/it]  0%|          | 2/1636 [04:01<54:42:57, 120.55s/it]  0%|          | 3/1636 [06:02<54:42:13, 120.60s/it]  0%|          | 4/1636 [07:59<54:02:17, 119.20s/it]  0%|          | 5/1636 [09:57<53:53:35, 118.95s/it]  0%|          | 6/1636 [11:56<53:52:05, 118.97s/it]  0%|          | 7/1636 [13:55<53:47:15, 118.87s/it]  0%|          | 8/1636 [15:53<53:41:45, 118.74s/it]  1%|          | 9/1636 [17:51<53:31:14, 118.42s/it]  1%|          | 10/1636 [19:48<53:18:38, 118.03s/it]  1%|          | 11/1636 [21:48<53:28:39, 118.47s/it]  1%|          | 12/1636 [23:46<53:25:34, 118.43s/it]  1%|          | 13/1636 [25:44<53:22:19, 118.39s/it]  1%|          | 14/1636 [27:44<53:30:32, 118.76s/it]  1%|          | 15/1636 [29:43<53:33:49, 118.96s/it]  1%|          | 16/1636 [31:41<53:23:32, 118.65s/it]  1%|          | 17/1636 [33:38<53:03:59, 118.00s/it]  1%|          | 18/1636 [35:37<53:14:05, 118.45s/it]  1%|          | 19/1636 [37:35<53:08:53, 118.33s/it]  1%|          | 20/1636 [39:35<53:18:55, 118.77s/it]  1%|▏         | 21/1636 [41:33<53:06:43, 118.39s/it]  1%|▏         | 22/1636 [43:31<53:08:56, 118.55s/it]  1%|▏         | 23/1636 [45:31<53:12:39, 118.76s/it]  1%|▏         | 24/1636 [47:29<53:10:29, 118.75s/it]  2%|▏         | 25/1636 [49:29<53:12:52, 118.92s/it]  2%|▏         | 26/1636 [51:28<53:16:53, 119.14s/it]  2%|▏         | 27/1636 [53:27<53:07:20, 118.86s/it]  2%|▏         | 28/1636 [55:25<53:03:47, 118.80s/it]  2%|▏         | 29/1636 [57:23<52:52:40, 118.46s/it]  2%|▏         | 30/1636 [59:22<52:55:28, 118.64s/it]  2%|▏         | 31/1636 [1:01:21<52:58:34, 118.83s/it]  2%|▏         | 32/1636 [1:03:20<52:59:03, 118.92s/it]  2%|▏         | 33/1636 [1:05:19<52:57:52, 118.95s/it]  2%|▏         | 34/1636 [1:07:18<52:50:44, 118.75s/it]  2%|▏         | 35/1636 [1:09:16<52:45:53, 118.65s/it]  2%|▏         | 36/1636 [1:11:16<52:50:10, 118.88s/it]
