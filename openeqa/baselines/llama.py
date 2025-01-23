@@ -108,7 +108,7 @@ def ask_question(
     prompt = load_prompt("blind-llm")
     input = prompt.format(question=question)
     # set "do_sample=False" to avoid probability tensor contains either `inf`, `nan` or element < 0
-    output = model(input, max_new_tokens=max_tokens, temperature=temperature, do_sample=False)
+    output = model(input, max_new_tokens=max_tokens, temperature=temperature)
     return parse_output(output)
 
 

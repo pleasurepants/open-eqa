@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name=Llama-2-70b-hf
+#SBATCH --job-name=Llama-4a100
 #SBATCH --nodes=1
-#SBATCH --gres=gpu:a100:4 -C a100_80
+#SBATCH --gres=gpu:a100:4
 #SBATCH --ntasks=4  
 #SBATCH --cpus-per-task=16
 #SBATCH --time=24:00:00
-#SBATCH --output=/home/hpc/v100dd/v100dd12/code/open-eqa/slurm/baseline_llama-%j.out
+#SBATCH --output=/home/hpc/v100dd/v100dd12/code/open-eqa/slurm/baseline_llama_4a100-%j.out
 #SBATCH --partition=a100
 
 source /home/hpc/v100dd/v100dd12/anaconda3/bin/activate openeqa
@@ -26,12 +26,16 @@ MASTER_PORT=$(comm -23 <(seq 8000 9000 | sort) <(ss -Htan | awk '{print $4}' | c
 
 RDZV_ID=$RANDOM
 MASTER_NODE=$(hostname)
+echo "CUDA_VISIBLE_DEVICES = $CUDA_VISIBLE_DEVICES"
 
 RDZV_ID=$RANDOM
 MASTER_NODE=$(hostname)
-python -m torch.distributed.run --nproc_per_node=2 --rdzv-id=$RDZV_ID --rdzv-backend=c10d --rdzv-endpoint=$MASTER_NODE --master_addr $MASTER_ADDR --master_port $MASTER_PORT \
-    /home/hpc/v100dd/v100dd12/code/open-eqa/openeqa/baselines/llama_distributed.py \
-    --seed 4321 \
+# python -m torch.distributed.run --nproc_per_node=4 --rdzv-id=$RDZV_ID --rdzv-backend=c10d --rdzv-endpoint=$MASTER_NODE --master_addr $MASTER_ADDR --master_port $MASTER_PORT \
+#     /home/hpc/v100dd/v100dd12/code/open-eqa/openeqa/baselines/llama_distributed.py \
+#     --seed 4321 \
+#     --model-path /anvme/workspace/v100dd12-openeqa/llama/Llama-2-70b-hf \
+#     --load-in-8bit \
+python /home/hpc/v100dd/v100dd12/code/open-eqa/openeqa/baselines/llama_distributed.py \
+    --seed 4440 \
     --model-path /anvme/workspace/v100dd12-openeqa/llama/Llama-2-70b-hf \
-
-
+    --load-in-8bit \

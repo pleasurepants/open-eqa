@@ -33,7 +33,11 @@ class LLaMARunner:
             load_in_8bit=load_in_8bit,
             device_map="auto",
             attn_implementation="sdpa" if use_fast_kernels else None,
+            local_files_only = True,
         )
+
+        print(self.model.device)
+
         self.model.eval()
 
         self.tokenizer = AutoTokenizer.from_pretrained(model)
