@@ -1,0 +1,24 @@
+Sun Jan 26 05:14:34 PM CET 2025
+worker-9
+/home/wiss/zhang/anaconda3/envs/openeqa/bin/python
+found 1,636 questions
+found 1,636 results
+  0%|          | 0/1636 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/wiss/zhang/code/open-eqa/openeqa/evaluation/llm_match.py", line 48, in get_llm_match_score
+    set_openai_key(key=openai_key)
+  File "/home/wiss/zhang/code/open-eqa/openeqa/utils/openai_utils.py", line 17, in set_openai_key
+    assert "OPENAI_API_KEY" in os.environ
+AssertionError
+  0%|          | 0/1636 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/wiss/zhang/code/open-eqa/evaluate-predictions.py", line 127, in <module>
+    main(parse_args())
+  File "/home/wiss/zhang/code/open-eqa/evaluate-predictions.py", line 109, in main
+    score = get_llm_match_score(
+  File "/home/wiss/zhang/code/open-eqa/openeqa/evaluation/llm_match.py", line 68, in get_llm_match_score
+    raise e
+  File "/home/wiss/zhang/code/open-eqa/openeqa/evaluation/llm_match.py", line 48, in get_llm_match_score
+    set_openai_key(key=openai_key)
+  File "/home/wiss/zhang/code/open-eqa/openeqa/utils/openai_utils.py", line 17, in set_openai_key
+    assert "OPENAI_API_KEY" in os.environ
+AssertionError
