@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name=Llama-2-70b-hf
+#SBATCH --job-name=Llama-2-70b-hf-eval
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:a40:1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=16
 #SBATCH --time=24:00:00
-#SBATCH --output=/home/hpc/v100dd/v100dd12/code/open-eqa/slurm/matrix_llama-%j.out
+#SBATCH --output=/home/hpc/v100dd/v100dd12/code/open-eqa/slurm/matrix_llama-70b-%j.out
 #SBATCH --partition a40
 
 source /home/hpc/v100dd/v100dd12/anaconda3/bin/activate openeqa
@@ -29,7 +29,7 @@ RDZV_ID=$RANDOM
 MASTER_NODE=$(hostname)
 python -m torch.distributed.run --nproc_per_node=4 --rdzv-id=$RDZV_ID --rdzv-backend=c10d --rdzv-endpoint=$MASTER_NODE --master_addr $MASTER_ADDR --master_port $MASTER_PORT \
     /home/hpc/v100dd/v100dd12/code/open-eqa/evaluate-predictions.py \
-    /home/hpc/v100dd/v100dd12/code/open-eqa/data/results/open-eqa-v0-llama-2-7b-hf-4321.json \
+    /home/hpc/v100dd/v100dd12/code/open-eqa/data/results/open-eqa-v0-llama-2-70b-hf-4480.json \
     --output-directory /home/hpc/v100dd/v100dd12/code/open-eqa/data/matrics \
 
 # 停止监控
