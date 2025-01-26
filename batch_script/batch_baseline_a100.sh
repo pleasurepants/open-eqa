@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name=Llama-4a100
+#SBATCH --job-name=Llama-4a100-80
 #SBATCH --nodes=1
-#SBATCH --gres=gpu:a100:4
+#SBATCH --gres=gpu:a100:4 -C a100_80
 #SBATCH --ntasks=4  
 #SBATCH --cpus-per-task=16
 #SBATCH --time=24:00:00
-#SBATCH --output=/home/hpc/v100dd/v100dd12/code/open-eqa/slurm/baseline_llama_4a100-%j.out
+#SBATCH --output=/home/hpc/v100dd/v100dd12/code/open-eqa/slurm/baseline_llama_4a100_80-%j.out
 #SBATCH --partition=a100
 
 source /home/hpc/v100dd/v100dd12/anaconda3/bin/activate openeqa
@@ -36,6 +36,6 @@ MASTER_NODE=$(hostname)
 #     --model-path /anvme/workspace/v100dd12-openeqa/llama/Llama-2-70b-hf \
 #     --load-in-8bit \
 python /home/hpc/v100dd/v100dd12/code/open-eqa/openeqa/baselines/llama_distributed.py \
-    --seed 4440 \
+    --seed 4480 \
     --model-path /anvme/workspace/v100dd12-openeqa/llama/Llama-2-70b-hf \
     --load-in-8bit \

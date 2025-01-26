@@ -12,6 +12,10 @@ from tqdm import tqdm
 
 from openeqa.evaluation.llm_match import get_llm_match_score
 import os
+import openai
+openai_api_key = os.getenv("OPENAI_API_KEY")
+
+openai.api_key = openai_api_key
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
@@ -107,6 +111,7 @@ def main(args: argparse.Namespace):
             answer=item["answer"],
             prediction=result["answer"],
             extra_answers=extra_answers,
+            openai_key=openai_api_key,
         )
 
         all_scores[question_id] = score
