@@ -1,4 +1,0 @@
-Thu Jan 23 03:25:57 PM CET 2025
-worker-7
-/home/wiss/zhang/anaconda3/envs/openeqa/bin/python
-slurmstepd: error: *** JOB 28761 ON worker-7 CANCELLED AT 2025-01-23T15:26:01 ***

@@ -1,8 +1,0 @@
-Thu Jan 23 03:26:44 PM CET 2025
-worker-7
-/home/wiss/zhang/anaconda3/envs/openeqa/bin/python
-The `load_in_4bit` and `load_in_8bit` arguments are deprecated and will be removed in the future versions. Please, pass a `BitsAndBytesConfig` object in `quantization_config` argument instead.
-found 1,636 questions
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:23<00:23, 23.80s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:31<00:00, 14.41s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:31<00:00, 15.81s/it]
-model distributed:  {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 1, 'model.layers.7': 1, 'model.layers.8': 1, 'model.layers.9': 1, 'model.layers.10': 1, 'model.layers.11': 1, 'model.layers.12': 1, 'model.layers.13': 1, 'model.layers.14': 2, 'model.layers.15': 2, 'model.layers.16': 2, 'model.layers.17': 2, 'model.layers.18': 2, 'model.layers.19': 2, 'model.layers.20': 2, 'model.layers.21': 2, 'model.layers.22': 3, 'model.layers.23': 3, 'model.layers.24': 3, 'model.layers.25': 3, 'model.layers.26': 3, 'model.layers.27': 3, 'model.layers.28': 3, 'model.layers.29': 3, 'model.layers.30': 3, 'model.layers.31': 3, 'model.norm': 3, 'lm_head': 3}
-  0%|          | 0/1636 [00:00<?, ?it/s]slurmstepd: error: *** JOB 28763 ON worker-7 CANCELLED AT 2025-01-23T15:27:45 ***
