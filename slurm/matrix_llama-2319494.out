@@ -1,181 +1,0 @@
-### Starting TaskPrologue of job 2319494 on a0125 at Tue Jan 21 16:49:03 CET 2025
-Running on cores 112-127 with governor ondemand
-Tue Jan 21 16:49:03 2025       
-+-----------------------------------------------------------------------------------------+
-| NVIDIA-SMI 565.57.01              Driver Version: 565.57.01      CUDA Version: 12.7     |
-|-----------------------------------------+------------------------+----------------------+
-| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
-|                                         |                        |               MIG M. |
-|=========================================+========================+======================|
-|   0  NVIDIA A40                     On  |   00000000:E1:00.0 Off |                  Off |
-|  0%   35C    P8             22W /  300W |       1MiB /  49140MiB |      0%      Default |
-|                                         |                        |                  N/A |
-+-----------------------------------------+------------------------+----------------------+
-                                                                                         
-+-----------------------------------------------------------------------------------------+
-| Processes:                                                                              |
-|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
-|        ID   ID                                                               Usage      |
-|=========================================================================================|
-|  No running processes found                                                             |
-+-----------------------------------------------------------------------------------------+
-### Finished TaskPrologue
-
-Tue Jan 21 16:49:07 CET 2025
-a0125.nhr.fau.de
-/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/bin/python
-WARNING:__main__:
-*****************************************
-Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
-*****************************************
-found 1,636 questions
-found 1,636 questions
-found 1,636 results
-found 1,636 results
-  0%|          | 0/1636 [00:00<?, ?it/s]  0%|          | 0/1636 [00:00<?, ?it/s]  0%|          | 1/1636 [00:01<49:30,  1.82s/it]  0%|          | 1/1636 [00:02<55:01,  2.02s/it]  0%|          | 2/1636 [00:02<30:55,  1.14s/it]  0%|          | 2/1636 [00:02<32:11,  1.18s/it]found 1,636 questions
-found 1,636 questions
-found 1,636 results
-found 2 existing scores
-found 1,636 results
-found 2 existing scores
-  0%|          | 0/1636 [00:00<?, ?it/s]  0%|          | 0/1636 [00:00<?, ?it/s]  0%|          | 3/1636 [00:03<25:45,  1.06it/s]  0%|          | 3/1636 [00:00<05:48,  4.68it/s]  0%|          | 3/1636 [00:00<06:52,  3.95it/s]  0%|          | 3/1636 [00:03<27:55,  1.03s/it]  0%|          | 4/1636 [00:03<21:55,  1.24it/s]  0%|          | 4/1636 [00:04<23:36,  1.15it/s]  0%|          | 4/1636 [00:01<11:21,  2.40it/s]  0%|          | 4/1636 [00:02<16:03,  1.69it/s]  0%|          | 5/1636 [00:04<20:57,  1.30it/s]  0%|          | 5/1636 [00:02<12:55,  2.10it/s]  0%|          | 5/1636 [00:05<27:09,  1.00it/s]  0%|          | 6/1636 [00:02<13:51,  1.96it/s]  0%|          | 6/1636 [00:05<20:19,  1.34it/s]  0%|          | 5/1636 [00:02<17:43,  1.53it/s]  0%|          | 6/1636 [00:05<23:39,  1.15it/s]  0%|          | 6/1636 [00:03<17:00,  1.60it/s]  0%|          | 7/1636 [00:03<15:34,  1.74it/s]  0%|          | 7/1636 [00:06<19:55,  1.36it/s]  0%|          | 7/1636 [00:06<21:00,  1.29it/s]  0%|          | 7/1636 [00:04<17:12,  1.58it/s]  0%|          | 8/1636 [00:06<19:08,  1.42it/s]  0%|          | 8/1636 [00:06<19:38,  1.38it/s]  0%|          | 8/1636 [00:04<19:03,  1.42it/s]  1%|          | 9/1636 [00:07<17:55,  1.51it/s]  0%|          | 8/1636 [00:04<17:48,  1.52it/s]  1%|          | 9/1636 [00:07<19:46,  1.37it/s]  1%|          | 9/1636 [00:05<20:16,  1.34it/s]  1%|          | 10/1636 [00:08<18:24,  1.47it/s]  1%|          | 9/1636 [00:05<19:19,  1.40it/s]  1%|          | 10/1636 [00:08<18:55,  1.43it/s]  1%|          | 10/1636 [00:05<19:11,  1.41it/s]  1%|          | 11/1636 [00:08<18:17,  1.48it/s]  1%|          | 10/1636 [00:06<19:10,  1.41it/s]  1%|          | 11/1636 [00:08<18:36,  1.45it/s]  1%|          | 11/1636 [00:06<19:09,  1.41it/s]  1%|          | 12/1636 [00:09<18:01,  1.50it/s]  1%|          | 12/1636 [00:09<17:39,  1.53it/s]  1%|          | 11/1636 [00:07<19:33,  1.38it/s]  1%|          | 12/1636 [00:07<17:50,  1.52it/s]  1%|          | 12/1636 [00:07<18:30,  1.46it/s]  1%|          | 13/1636 [00:07<17:31,  1.54it/s]  1%|          | 13/1636 [00:10<22:24,  1.21it/s]  1%|          | 13/1636 [00:10<20:52,  1.30it/s]  1%|          | 13/1636 [00:08<18:03,  1.50it/s]  1%|          | 14/1636 [00:11<20:39,  1.31it/s]  1%|          | 14/1636 [00:08<20:23,  1.33it/s]  1%|          | 14/1636 [00:11<21:26,  1.26it/s]  1%|          | 14/1636 [00:09<19:08,  1.41it/s]  1%|          | 15/1636 [00:11<21:03,  1.28it/s]  1%|          | 15/1636 [00:09<20:02,  1.35it/s]  1%|          | 15/1636 [00:12<20:36,  1.31it/s]  1%|          | 15/1636 [00:09<17:30,  1.54it/s]  1%|          | 16/1636 [00:12<19:16,  1.40it/s]  1%|          | 16/1636 [00:10<16:50,  1.60it/s]  1%|          | 16/1636 [00:12<20:37,  1.31it/s]  1%|          | 16/1636 [00:10<20:44,  1.30it/s]  1%|          | 17/1636 [00:10<16:15,  1.66it/s]  1%|          | 17/1636 [00:13<20:24,  1.32it/s]  1%|          | 17/1636 [00:11<20:17,  1.33it/s]  1%|          | 17/1636 [00:13<21:41,  1.24it/s]  1%|          | 18/1636 [00:14<21:03,  1.28it/s]  1%|          | 18/1636 [00:11<19:39,  1.37it/s]  1%|          | 18/1636 [00:14<20:35,  1.31it/s]  1%|          | 18/1636 [00:11<21:48,  1.24it/s]  1%|          | 19/1636 [00:14<19:34,  1.38it/s]  1%|          | 19/1636 [00:15<18:47,  1.43it/s]  1%|          | 19/1636 [00:12<19:27,  1.38it/s]  1%|          | 19/1636 [00:12<22:59,  1.17it/s]  1%|          | 20/1636 [00:15<19:47,  1.36it/s]  1%|          | 20/1636 [00:15<18:00,  1.50it/s]  1%|          | 20/1636 [00:13<18:26,  1.46it/s]  1%|▏         | 21/1636 [00:16<18:15,  1.47it/s]  1%|          | 20/1636 [00:13<21:09,  1.27it/s]  1%|▏         | 21/1636 [00:16<18:05,  1.49it/s]  1%|▏         | 22/1636 [00:16<17:26,  1.54it/s]  1%|▏         | 21/1636 [00:14<19:39,  1.37it/s]  1%|▏         | 22/1636 [00:17<20:10,  1.33it/s]  1%|▏         | 23/1636 [00:17<17:19,  1.55it/s]  1%|▏         | 22/1636 [00:14<18:36,  1.45it/s]  1%|▏         | 21/1636 [00:15<30:44,  1.14s/it]  1%|▏         | 23/1636 [00:17<19:37,  1.37it/s]  1%|▏         | 24/1636 [00:17<16:50,  1.59it/s]  1%|▏         | 23/1636 [00:15<18:29,  1.45it/s]  2%|▏         | 25/1636 [00:18<16:43,  1.61it/s]  1%|▏         | 24/1636 [00:18<20:11,  1.33it/s]  1%|▏         | 24/1636 [00:16<18:19,  1.47it/s]  1%|▏         | 22/1636 [00:16<29:32,  1.10s/it]  2%|▏         | 25/1636 [00:19<18:46,  1.43it/s]  2%|▏         | 26/1636 [00:19<17:50,  1.50it/s]  1%|▏         | 23/1636 [00:16<26:55,  1.00s/it]  2%|▏         | 25/1636 [00:16<19:51,  1.35it/s]  2%|▏         | 27/1636 [00:20<19:17,  1.39it/s]  2%|▏         | 26/1636 [00:17<18:19,  1.46it/s]  1%|▏         | 24/1636 [00:17<23:27,  1.15it/s]  2%|▏         | 26/1636 [00:20<23:11,  1.16it/s]  2%|▏         | 28/1636 [00:20<18:16,  1.47it/s]  2%|▏         | 27/1636 [00:18<17:44,  1.51it/s]  2%|▏         | 25/1636 [00:18<21:38,  1.24it/s]  2%|▏         | 27/1636 [00:21<21:03,  1.27it/s]  2%|▏         | 29/1636 [00:21<17:41,  1.51it/s]  2%|▏         | 28/1636 [00:18<17:13,  1.56it/s]  2%|▏         | 26/1636 [00:18<20:17,  1.32it/s]  2%|▏         | 28/1636 [00:21<20:17,  1.32it/s]  2%|▏         | 29/1636 [00:19<16:41,  1.60it/s]  2%|▏         | 27/1636 [00:19<19:13,  1.40it/s]  2%|▏         | 30/1636 [00:22<19:25,  1.38it/s]  2%|▏         | 29/1636 [00:22<19:18,  1.39it/s]  2%|▏         | 28/1636 [00:20<17:49,  1.50it/s]  2%|▏         | 31/1636 [00:22<19:12,  1.39it/s]  2%|▏         | 30/1636 [00:23<18:30,  1.45it/s]  2%|▏         | 30/1636 [00:20<23:25,  1.14it/s]  2%|▏         | 32/1636 [00:23<17:59,  1.49it/s]  2%|▏         | 31/1636 [00:21<21:29,  1.24it/s]  2%|▏         | 31/1636 [00:24<20:54,  1.28it/s]  2%|▏         | 29/1636 [00:21<24:38,  1.09it/s]  2%|▏         | 33/1636 [00:24<19:51,  1.35it/s]  2%|▏         | 30/1636 [00:22<23:49,  1.12it/s]  2%|▏         | 32/1636 [00:22<22:43,  1.18it/s]  2%|▏         | 34/1636 [00:25<19:23,  1.38it/s]  2%|▏         | 32/1636 [00:25<23:58,  1.12it/s]  2%|▏         | 31/1636 [00:22<21:13,  1.26it/s]  2%|▏         | 33/1636 [00:22<20:34,  1.30it/s]  2%|▏         | 35/1636 [00:25<18:59,  1.40it/s]  2%|▏         | 33/1636 [00:26<23:03,  1.16it/s]  2%|▏         | 32/1636 [00:23<19:28,  1.37it/s]  2%|▏         | 34/1636 [00:23<19:34,  1.36it/s]  2%|▏         | 36/1636 [00:26<19:05,  1.40it/s]  2%|▏         | 34/1636 [00:26<20:44,  1.29it/s]  2%|▏         | 35/1636 [00:24<18:10,  1.47it/s]  2%|▏         | 33/1636 [00:24<19:05,  1.40it/s]  2%|▏         | 37/1636 [00:27<17:38,  1.51it/s]  2%|▏         | 35/1636 [00:27<20:45,  1.29it/s]  2%|▏         | 34/1636 [00:24<18:26,  1.45it/s]  2%|▏         | 36/1636 [00:24<18:19,  1.46it/s]  2%|▏         | 36/1636 [00:27<19:18,  1.38it/s]  2%|▏         | 38/1636 [00:28<20:18,  1.31it/s]  2%|▏         | 35/1636 [00:25<17:55,  1.49it/s]  2%|▏         | 37/1636 [00:25<17:48,  1.50it/s]  2%|▏         | 36/1636 [00:25<16:53,  1.58it/s]  2%|▏         | 37/1636 [00:28<19:08,  1.39it/s]  2%|▏         | 39/1636 [00:28<20:25,  1.30it/s]  2%|▏         | 38/1636 [00:26<18:04,  1.47it/s]  2%|▏         | 37/1636 [00:26<17:08,  1.55it/s]  2%|▏         | 38/1636 [00:29<18:19,  1.45it/s]  2%|▏         | 40/1636 [00:29<19:02,  1.40it/s]  2%|▏         | 39/1636 [00:26<17:59,  1.48it/s]  2%|▏         | 39/1636 [00:29<17:31,  1.52it/s]  2%|▏         | 38/1636 [00:27<17:26,  1.53it/s]  2%|▏         | 40/1636 [00:27<18:03,  1.47it/s]  3%|▎         | 41/1636 [00:30<19:38,  1.35it/s]  2%|▏         | 39/1636 [00:27<16:58,  1.57it/s]  2%|▏         | 40/1636 [00:30<17:45,  1.50it/s]  3%|▎         | 41/1636 [00:28<17:14,  1.54it/s]  3%|▎         | 42/1636 [00:30<19:52,  1.34it/s]  3%|▎         | 41/1636 [00:31<17:21,  1.53it/s]  2%|▏         | 40/1636 [00:28<17:00,  1.56it/s]  3%|▎         | 43/1636 [00:31<19:51,  1.34it/s]  3%|▎         | 42/1636 [00:31<16:42,  1.59it/s]  3%|▎         | 42/1636 [00:29<21:08,  1.26it/s]  3%|▎         | 41/1636 [00:29<19:04,  1.39it/s]  3%|▎         | 44/1636 [00:32<18:51,  1.41it/s]  3%|▎         | 43/1636 [00:32<16:43,  1.59it/s]  3%|▎         | 43/1636 [00:29<19:23,  1.37it/s]  3%|▎         | 42/1636 [00:30<19:42,  1.35it/s]  3%|▎         | 45/1636 [00:32<17:55,  1.48it/s]  3%|▎         | 44/1636 [00:32<16:16,  1.63it/s]  3%|▎         | 44/1636 [00:30<19:37,  1.35it/s]  3%|▎         | 43/1636 [00:30<18:42,  1.42it/s]  3%|▎         | 45/1636 [00:33<15:52,  1.67it/s]  3%|▎         | 46/1636 [00:33<18:55,  1.40it/s]  3%|▎         | 45/1636 [00:31<20:02,  1.32it/s]  3%|▎         | 46/1636 [00:34<15:33,  1.70it/s]  3%|▎         | 44/1636 [00:31<17:44,  1.50it/s]  3%|▎         | 47/1636 [00:34<17:45,  1.49it/s]  3%|▎         | 46/1636 [00:31<18:28,  1.43it/s]  3%|▎         | 47/1636 [00:34<15:57,  1.66it/s]  3%|▎         | 48/1636 [00:34<17:08,  1.54it/s]  3%|▎         | 45/1636 [00:32<18:43,  1.42it/s]  3%|▎         | 47/1636 [00:32<17:31,  1.51it/s]  3%|▎         | 48/1636 [00:35<16:43,  1.58it/s]  3%|▎         | 46/1636 [00:32<17:30,  1.51it/s]  3%|▎         | 49/1636 [00:35<16:51,  1.57it/s]  3%|▎         | 48/1636 [00:33<18:12,  1.45it/s]  3%|▎         | 47/1636 [00:33<17:49,  1.49it/s]  3%|▎         | 49/1636 [00:36<17:24,  1.52it/s]  3%|▎         | 50/1636 [00:36<17:35,  1.50it/s]  3%|▎         | 49/1636 [00:33<17:27,  1.51it/s]  3%|▎         | 50/1636 [00:36<17:01,  1.55it/s]  3%|▎         | 48/1636 [00:34<18:04,  1.46it/s]  3%|▎         | 51/1636 [00:36<17:17,  1.53it/s]  3%|▎         | 50/1636 [00:34<16:54,  1.56it/s]  3%|▎         | 52/1636 [00:37<18:08,  1.46it/s]  3%|▎         | 49/1636 [00:35<18:52,  1.40it/s]  3%|▎         | 51/1636 [00:35<16:06,  1.64it/s]  3%|▎         | 51/1636 [00:37<19:27,  1.36it/s]  3%|▎         | 52/1636 [00:35<16:09,  1.63it/s]  3%|▎         | 53/1636 [00:38<17:49,  1.48it/s]  3%|▎         | 50/1636 [00:35<18:43,  1.41it/s]  3%|▎         | 52/1636 [00:38<20:00,  1.32it/s]  3%|▎         | 54/1636 [00:38<16:55,  1.56it/s]  3%|▎         | 53/1636 [00:36<16:27,  1.60it/s]  3%|▎         | 51/1636 [00:36<18:16,  1.45it/s]  3%|▎         | 53/1636 [00:39<19:47,  1.33it/s]  3%|▎         | 54/1636 [00:36<16:06,  1.64it/s]  3%|▎         | 52/1636 [00:36<17:17,  1.53it/s]  3%|▎         | 54/1636 [00:39<18:40,  1.41it/s]  3%|▎         | 55/1636 [00:38<20:47,  1.27it/s]  3%|▎         | 55/1636 [00:40<21:42,  1.21it/s]  3%|▎         | 53/1636 [00:38<24:36,  1.07it/s]  3%|▎         | 56/1636 [00:38<20:56,  1.26it/s]  3%|▎         | 54/1636 [00:39<22:31,  1.17it/s]  3%|▎         | 56/1636 [00:41<23:12,  1.13it/s]  3%|▎         | 57/1636 [00:39<20:02,  1.31it/s]  3%|▎         | 55/1636 [00:39<20:54,  1.26it/s]  3%|▎         | 57/1636 [00:42<21:41,  1.21it/s]  4%|▎         | 58/1636 [00:40<18:44,  1.40it/s]  3%|▎         | 56/1636 [00:40<19:30,  1.35it/s]  4%|▎         | 58/1636 [00:43<19:24,  1.36it/s]  4%|▎         | 59/1636 [00:40<17:57,  1.46it/s]  3%|▎         | 57/1636 [00:41<18:23,  1.43it/s]  3%|▎         | 55/1636 [00:43<50:50,  1.93s/it]  4%|▎         | 59/1636 [00:43<18:04,  1.45it/s]  4%|▎         | 60/1636 [00:41<19:08,  1.37it/s]  4%|▎         | 58/1636 [00:41<17:37,  1.49it/s]  4%|▎         | 60/1636 [00:44<19:16,  1.36it/s]  3%|▎         | 56/1636 [00:44<42:20,  1.61s/it]  4%|▎         | 59/1636 [00:42<18:26,  1.43it/s]  4%|▎         | 61/1636 [00:42<20:06,  1.31it/s]  3%|▎         | 57/1636 [00:45<37:40,  1.43s/it]  4%|▎         | 61/1636 [00:45<21:44,  1.21it/s]  4%|▍         | 62/1636 [00:43<19:43,  1.33it/s]  4%|▍         | 62/1636 [00:46<20:59,  1.25it/s]  4%|▍         | 63/1636 [00:43<18:50,  1.39it/s]  4%|▎         | 60/1636 [00:44<28:16,  1.08s/it]  4%|▎         | 58/1636 [00:47<37:17,  1.42s/it]  4%|▍         | 64/1636 [00:44<19:33,  1.34it/s]  4%|▍         | 63/1636 [00:47<22:43,  1.15it/s]  4%|▎         | 61/1636 [00:44<24:19,  1.08it/s]  4%|▎         | 59/1636 [00:47<30:34,  1.16s/it]  4%|▍         | 62/1636 [00:45<21:42,  1.21it/s]  4%|▎         | 60/1636 [00:48<26:03,  1.01it/s]  4%|▍         | 64/1636 [00:48<23:07,  1.13it/s]  4%|▍         | 65/1636 [00:46<24:56,  1.05it/s]  4%|▎         | 61/1636 [00:48<22:52,  1.15it/s]  4%|▍         | 63/1636 [00:46<19:54,  1.32it/s]  4%|▍         | 65/1636 [00:53<1:00:27,  2.31s/it]  4%|▍         | 66/1636 [00:51<58:53,  2.25s/it]  4%|▍         | 64/1636 [00:51<54:44,  2.09s/it]  4%|▍         | 62/1636 [00:53<56:54,  2.17s/it]  4%|▍         | 63/1636 [00:54<44:27,  1.70s/it]  4%|▍         | 66/1636 [00:54<47:15,  1.81s/it]    4%|▍         | 67/1636 [00:52<46:47,  1.79s/it]  4%|▍         | 65/1636 [00:52<43:53,  1.68s/it]  4%|▍         | 67/1636 [00:55<37:58,  1.45s/it]  4%|▍         | 66/1636 [00:52<36:28,  1.39s/it]  4%|▍         | 68/1636 [00:52<38:30,  1.47s/it]  4%|▍         | 64/1636 [00:55<39:37,  1.51s/it]  4%|▍         | 68/1636 [00:55<32:00,  1.22s/it]  4%|▍         | 67/1636 [00:53<30:33,  1.17s/it]  4%|▍         | 69/1636 [00:53<32:25,  1.24s/it]  4%|▍         | 68/1636 [00:54<26:47,  1.03s/it]  4%|▍         | 70/1636 [00:54<27:40,  1.06s/it]  4%|▍         | 69/1636 [00:57<31:26,  1.20s/it]  4%|▍         | 65/1636 [00:57<39:01,  1.49s/it]  4%|▍         | 69/1636 [00:54<23:21,  1.12it/s]  4%|▍         | 71/1636 [00:54<24:29,  1.07it/s]  4%|▍         | 70/1636 [00:57<26:22,  1.01s/it]  4%|▍         | 66/1636 [00:57<32:02,  1.22s/it]  4%|▍         | 70/1636 [00:55<21:51,  1.19it/s]  4%|▍         | 72/1636 [00:55<22:50,  1.14it/s]  4%|▍         | 71/1636 [00:58<22:52,  1.14it/s]  4%|▍         | 67/1636 [00:58<26:41,  1.02s/it]  4%|▍         | 73/1636 [00:56<20:13,  1.29it/s]  4%|▍         | 68/1636 [00:58<23:55,  1.09it/s]  4%|▍         | 71/1636 [00:56<22:57,  1.14it/s]  4%|▍         | 69/1636 [00:59<21:11,  1.23it/s]  4%|▍         | 72/1636 [00:59<26:06,  1.00s/it]  5%|▍         | 74/1636 [00:56<20:27,  1.27it/s]  4%|▍         | 72/1636 [00:57<20:42,  1.26it/s]  4%|▍         | 73/1636 [01:00<22:32,  1.16it/s]  4%|▍         | 70/1636 [01:00<19:49,  1.32it/s]  5%|▍         | 75/1636 [00:57<19:43,  1.32it/s]  4%|▍         | 73/1636 [00:57<19:32,  1.33it/s]  5%|▍         | 74/1636 [01:00<20:38,  1.26it/s]  4%|▍         | 71/1636 [01:00<18:29,  1.41it/s]  5%|▍         | 74/1636 [00:58<18:30,  1.41it/s]  4%|▍         | 72/1636 [01:01<17:18,  1.51it/s]  5%|▍         | 76/1636 [00:58<22:54,  1.14it/s]  5%|▍         | 75/1636 [01:01<20:21,  1.28it/s]  5%|▍         | 75/1636 [00:59<19:22,  1.34it/s]  5%|▍         | 77/1636 [00:59<20:20,  1.28it/s]  4%|▍         | 73/1636 [01:01<17:31,  1.49it/s]  5%|▍         | 78/1636 [00:59<18:23,  1.41it/s]  5%|▍         | 74/1636 [01:02<19:37,  1.33it/s]  5%|▍         | 79/1636 [01:00<17:09,  1.51it/s]  5%|▍         | 75/1636 [01:03<19:23,  1.34it/s]  5%|▍         | 80/1636 [01:01<18:49,  1.38it/s]  5%|▍         | 81/1636 [01:02<21:47,  1.19it/s]  5%|▍         | 76/1636 [01:02<39:40,  1.53s/it]  5%|▌         | 82/1636 [01:03<20:40,  1.25it/s]  5%|▍         | 77/1636 [01:03<34:38,  1.33s/it]  5%|▌         | 83/1636 [01:03<18:59,  1.36it/s]  5%|▍         | 78/1636 [01:03<28:35,  1.10s/it]  5%|▌         | 84/1636 [01:04<18:54,  1.37it/s]  5%|▍         | 79/1636 [01:04<27:48,  1.07s/it]  5%|▍         | 80/1636 [01:05<26:21,  1.02s/it]  5%|▍         | 81/1636 [01:06<23:30,  1.10it/s]  5%|▌         | 82/1636 [01:07<23:00,  1.13it/s]  5%|▌         | 85/1636 [01:07<38:12,  1.48s/it]  5%|▍         | 76/1636 [01:10<1:22:56,  3.19s/it]  5%|▌         | 83/1636 [01:07<20:23,  1.27it/s]  5%|▌         | 86/1636 [01:08<31:55,  1.24s/it]  5%|▌         | 84/1636 [01:08<22:14,  1.16it/s]  5%|▌         | 87/1636 [01:09<30:12,  1.17s/it]  5%|▍         | 77/1636 [01:12<1:14:21,  2.86s/it]  5%|▌         | 88/1636 [01:10<28:02,  1.09s/it]  5%|▍         | 78/1636 [01:13<58:29,  2.25s/it]    5%|▌         | 89/1636 [01:10<25:43,  1.00it/s]  5%|▍         | 79/1636 [01:14<47:39,  1.84s/it]  5%|▍         | 80/1636 [01:14<37:49,  1.46s/it]Traceback (most recent call last):
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/tenacity/__init__.py", line 382, in __call__
-    result = fn(*args, **kwargs)
-  File "/home/hpc/v100dd/v100dd12/code/open-eqa/openeqa/utils/openai_utils.py", line 70, in call_openai_api
-    completion = client.chat.completions.create(
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/openai/_utils/_utils.py", line 279, in wrapper
-    return func(*args, **kwargs)
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/openai/resources/chat/completions.py", line 859, in create
-    return self._post(
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/openai/_base_client.py", line 1283, in post
-    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/openai/_base_client.py", line 960, in request
-    return self._request(
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/openai/_base_client.py", line 1049, in _request
-    return self._retry_request(
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/openai/_base_client.py", line 1098, in _retry_request
-    return self._request(
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/openai/_base_client.py", line 1049, in _request
-    return self._retry_request(
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/openai/_base_client.py", line 1098, in _retry_request
-    return self._request(
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/openai/_base_client.py", line 1064, in _request
-    raise self._make_status_error_from_response(err.response) from None
-openai.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4-turbo-preview in organization org-F40chmsNFwGCTNywHy9eLaqv on tokens per min (TPM): Limit 30000, Used 29775, Requested 356. Please try again in 262ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/hpc/v100dd/v100dd12/code/open-eqa/openeqa/evaluation/llm_match.py", line 57, in get_llm_match_score
-    output = call_openai_api(
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/tenacity/__init__.py", line 289, in wrapped_f
-    return self(f, *args, **kw)
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/tenacity/__init__.py", line 379, in __call__
-    do = self.iter(retry_state=retry_state)
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/tenacity/__init__.py", line 326, in iter
-    raise retry_exc from fut.exception()
-tenacity.RetryError: RetryError[<Future at 0x145643092550 state=finished raised RateLimitError>]
-  5%|▍         | 75/1636 [01:15<26:01,  1.00s/it]
-Traceback (most recent call last):
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/tenacity/__init__.py", line 382, in __call__
-    result = fn(*args, **kwargs)
-  File "/home/hpc/v100dd/v100dd12/code/open-eqa/openeqa/utils/openai_utils.py", line 70, in call_openai_api
-    completion = client.chat.completions.create(
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/openai/_utils/_utils.py", line 279, in wrapper
-    return func(*args, **kwargs)
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/openai/resources/chat/completions.py", line 859, in create
-    return self._post(
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/openai/_base_client.py", line 1283, in post
-    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/openai/_base_client.py", line 960, in request
-    return self._request(
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/openai/_base_client.py", line 1049, in _request
-    return self._retry_request(
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/openai/_base_client.py", line 1098, in _retry_request
-    return self._request(
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/openai/_base_client.py", line 1049, in _request
-    return self._retry_request(
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/openai/_base_client.py", line 1098, in _retry_request
-    return self._request(
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/openai/_base_client.py", line 1064, in _request
-    raise self._make_status_error_from_response(err.response) from None
-openai.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4-turbo-preview in organization org-F40chmsNFwGCTNywHy9eLaqv on tokens per min (TPM): Limit 30000, Used 29775, Requested 356. Please try again in 262ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/hpc/v100dd/v100dd12/code/open-eqa/evaluate-predictions.py", line 123, in <module>
-    main(parse_args())
-  File "/home/hpc/v100dd/v100dd12/code/open-eqa/evaluate-predictions.py", line 106, in main
-    score = get_llm_match_score(
-  File "/home/hpc/v100dd/v100dd12/code/open-eqa/openeqa/evaluation/llm_match.py", line 68, in get_llm_match_score
-    raise e
-  File "/home/hpc/v100dd/v100dd12/code/open-eqa/openeqa/evaluation/llm_match.py", line 57, in get_llm_match_score
-    output = call_openai_api(
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/tenacity/__init__.py", line 289, in wrapped_f
-    return self(f, *args, **kw)
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/tenacity/__init__.py", line 379, in __call__
-    do = self.iter(retry_state=retry_state)
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/tenacity/__init__.py", line 326, in iter
-    raise retry_exc from fut.exception()
-tenacity.RetryError: RetryError[<Future at 0x145643092550 state=finished raised RateLimitError>]
-  5%|▍         | 81/1636 [01:15<34:39,  1.34s/it]  5%|▌         | 82/1636 [01:16<28:49,  1.11s/it][2025-01-21 16:50:41,624] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 729731 closing signal SIGTERM
-[2025-01-21 16:50:41,625] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 729733 closing signal SIGTERM
-[2025-01-21 16:50:41,625] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 729734 closing signal SIGTERM
-[2025-01-21 16:50:41,657] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 1 (pid: 729732) of binary: /home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/bin/python
-Traceback (most recent call last):
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/torch/distributed/run.py", line 816, in <module>
-    main()
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
-    return f(*args, **kwargs)
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/torch/distributed/run.py", line 812, in main
-    run(args)
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/torch/distributed/run.py", line 803, in run
-    elastic_launch(
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
-    return launch_agent(self._config, self._entrypoint, list(args))
-  File "/home/hpc/v100dd/v100dd12/anaconda3/envs/openeqa/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
-    raise ChildFailedError(
-torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
-============================================================
-/home/hpc/v100dd/v100dd12/code/open-eqa/evaluate-predictions.py FAILED
-------------------------------------------------------------
-Failures:
-  <NO_OTHER_FAILURES>
-------------------------------------------------------------
-Root Cause (first observed failure):
-[0]:
-  time      : 2025-01-21_16:50:41
-  host      : a0125.nhr.fau.de
-  rank      : 1 (local_rank: 1)
-  exitcode  : 1 (pid: 729732)
-  error_file: <N/A>
-  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
-============================================================
-kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
-=== JOB_STATISTICS ===
-=== current date     : Tue Jan 21 16:50:42 CET 2025
-= Job-ID             : 2319494 on alex
-= Job-Name           : Llama-2-70b-hf
-= Job-Command        : /home/hpc/v100dd/v100dd12/code/open-eqa/batch_script/batch_eval.sh
-= Initial workdir    : /home/hpc/v100dd/v100dd12/code/open-eqa
-= Queue/Partition    : a40
-= Slurm account      : v100dd with QOS=normal
-= Requested resources:  for 1-00:00:00
-= Elapsed runtime    : 00:01:39
-= Total RAM usage    : 0.6 GiB of assigned  GiB (%)
-= Node list          : a0125
-= Subm/Elig/Start/End: 2025-01-21T16:48:41 / 2025-01-21T16:48:41 / 2025-01-21T16:49:03 / 2025-01-21T16:50:42
-======================
-=== Quota infos ======
-    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
-    /home/hpc           99.9G   104.9G   209.7G        N/A     488K     500K   1,000K        N/A    
-    /home/vault          0.0K  1048.6G  2097.2G        N/A       1      200K     400K        N/A    
-======================
-=== GPU utilization ==
-gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

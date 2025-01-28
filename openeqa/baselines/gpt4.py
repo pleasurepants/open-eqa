@@ -20,7 +20,6 @@ from openeqa.utils.openai_utils import (
 from openeqa.utils.prompt_utils import load_prompt
 
 
-os.environ["OPENAI_API_KEY"]="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"
 
 
 def parse_args() -> argparse.Namespace:
@@ -34,8 +33,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--model",
         type=str,
-        default="gpt-4-0613",
-        help="GPT model (default: gpt-4-0613)",
+        default="gpt-4o-2024-11-20",
+        help="GPT model (default: gpt-4o-mini)",
     )
     parser.add_argument(
         "--seed",
@@ -78,21 +77,64 @@ def parse_args() -> argparse.Namespace:
     )
     return args
 
+# original, cant deal with the situation where ":" is not after A
+# def parse_output(output: str) -> str:
+#     print(output)
+#     start_idx = output.find("A:")
+#     if start_idx == -1:
+#         raise ValueError("Invalid output string: {}".format(output))
+#     end_idx = output.find("\n", start_idx)
+#     if end_idx == -1:
+#         return output[start_idx:].replace("A:", "").strip()
+    
+#     return output[start_idx:end_idx].replace("A:", "").strip()
 
 def parse_output(output: str) -> str:
+    # 如果输出一开始既没有 "A" 也没有 "A:"，自动加上 "A: "
+    if not output.startswith("A") and not output.startswith("A:"):
+        output = f"A: {output.strip()}"
+
+    # 找到第一个 "A" 的起始位置
+    start_idx = output.find("A")
+    if start_idx == -1:
+        raise ValueError("Invalid output string: {}".format(output))
+
+    # 提取从第一个 "A" 开始的内容
+    output = output[start_idx:].strip()
+
+    # 如果答案缺少冒号 ":", 自动补全
+    if not output.startswith("A:"):
+        output = f"A: {output[1:].strip()}"
+    
+    # 找到 "A:" 的实际起始位置
     start_idx = output.find("A:")
     if start_idx == -1:
         raise ValueError("Invalid output string: {}".format(output))
-    end_idx = output.find("\n", start_idx)
-    if end_idx == -1:
-        return output[start_idx:].replace("A:", "").strip()
+
+    # 舍去从第二个换行符开始的所有内容
+    first_newline_idx = output.find("\n", start_idx)
+    if first_newline_idx != -1:
+        second_newline_idx = output.find("\n", first_newline_idx + 1)
+        if second_newline_idx != -1:
+            output = output[:second_newline_idx].strip()
+
+    # 去掉 "A:" 并返回最终答案
+    return output[start_idx:].replace("A:", "").strip()
+
+    
+
+
     return output[start_idx:end_idx].replace("A:", "").strip()
+
+    
+
+
 
 
 def ask_question(
     question: str,
     openai_key: Optional[str] = None,
-    openai_model: str = "gpt-4-0613",
+    openai_model: str = "gpt-4o-2024-11-20",
     openai_seed: int = 1234,
     openai_max_tokens: int = 128,
     openai_temperature: float = 0.2,
@@ -109,6 +151,7 @@ def ask_question(
             max_tokens=openai_max_tokens,
             temperature=openai_temperature,
         )
+        print(output)
         return parse_output(output)
     except Exception as e:
         if not force:

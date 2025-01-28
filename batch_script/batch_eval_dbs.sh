@@ -1,12 +1,12 @@
 #!/bin/bash
-#SBATCH --job-name=llama-70b-eval
+#SBATCH --job-name=gpt4omini-eval
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=16
 #SBATCH --time=10-00:00:00
 #SBATCH --exclude=worker-minor-1,worker-minor-3,worker-minor-4,worker-minor-5,worker-minor-6,worker-1,worker-2,worker-3,worker-4,worker-5,worker-6,worker-7,worker-8
-#SBATCH --output=/home/wiss/zhang/code/open-eqa/slurm/matrix-70b-%j.out 
+#SBATCH --output=/home/wiss/zhang/code/open-eqa/slurm/matrix-gpt4omini-gpt4omini-%j.out 
 #SBATCH --partition all
 
 source /home/wiss/zhang/anaconda3/bin/activate openeqa
@@ -29,5 +29,5 @@ MASTER_PORT=$(comm -23 <(seq 8000 9000 | sort) <(ss -Htan | awk '{print $4}' | c
 RDZV_ID=$RANDOM
 MASTER_NODE=$(hostname)
 python /home/wiss/zhang/code/open-eqa/evaluate-predictions.py \
-    /home/wiss/zhang/code/open-eqa/data/results/open-eqa-v0-llama-2-70b-hf-4480.json \
+    /home/wiss/zhang/code/open-eqa/data/results/open-eqa-v0-gpt-4o-mini-2024-07-18-8123.json \
     --output-directory /home/wiss/zhang/code/open-eqa/data/matrix \

@@ -1,0 +1,6 @@
+Mon Jan 27 22:29:43 CET 2025
+worker-9
+/home/wiss/zhang/anaconda3/envs/openeqa/bin/python
+found 1,636 questions
+found 1,636 results
+  0%|          | 0/1636 [00:00<?, ?it/s]  0%|          | 1/1636 [00:00<24:01,  1.13it/s]  0%|          | 2/1636 [00:01<19:21,  1.41it/s]  0%|          | 3/1636 [00:02<17:22,  1.57it/s]  0%|          | 4/1636 [00:03<22:50,  1.19it/s]  0%|          | 5/1636 [00:03<20:32,  1.32it/s]  0%|          | 6/1636 [00:04<19:08,  1.42it/s]  0%|          | 7/1636 [00:05<18:34,  1.46it/s]  0%|          | 8/1636 [00:05<18:08,  1.50it/s]slurmstepd: error: *** JOB 29187 ON worker-9 CANCELLED AT 2025-01-27T22:29:54 ***

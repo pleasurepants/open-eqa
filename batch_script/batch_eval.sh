@@ -29,7 +29,7 @@ RDZV_ID=$RANDOM
 MASTER_NODE=$(hostname)
 python -m torch.distributed.run --nproc_per_node=4 --rdzv-id=$RDZV_ID --rdzv-backend=c10d --rdzv-endpoint=$MASTER_NODE --master_addr $MASTER_ADDR --master_port $MASTER_PORT \
     /home/hpc/v100dd/v100dd12/code/open-eqa/evaluate-predictions.py \
-    /home/hpc/v100dd/v100dd12/code/open-eqa/data/results/open-eqa-v0-llama-2-70b-hf-4480.json \
+    /home/wiss/zhang/code/open-eqa/data/results/open-eqa-v0-llama-2-7b-hf-4321.json \
     --output-directory /home/hpc/v100dd/v100dd12/code/open-eqa/data/matrics \
 
 # 停止监控
